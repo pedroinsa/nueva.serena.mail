@@ -1,7 +1,8 @@
+const { EMAIL } = require("../config/env")
 function defineSheet(name, message, email) {
     return {
         from: email,
-        to: "nueva.serena.brc@gmail.com",
+        to: EMAIL,
         subject: "Contacto",
         text: "Consulta por mail",
         html: `<div> 
